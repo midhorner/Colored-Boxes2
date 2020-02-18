@@ -1,0 +1,49 @@
+body {
+  background-color: black;
+}
+
+header {
+  padding: 5px;
+  justify-content: center;
+  display: flex;
+  margin: 15px;
+  color: Yellow;
+  font-family: arial, sans-serif;
+  font-size: 60pt;
+}
+
+#template {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-top: 20px;
+  width: 700px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: chartreuse;
+}
+
+.button-wrap {
+  display: flex;
+  padding-top: 30px;
+}
+
+#reset {
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: auto;
+  color: yellow;
+  background-color: black;
+  border: 5px solid Yellow;
+  border-radius: 20px;
+}
+
+#reset:hover {
+  color: black;
+  background-color: Yellow;
+}

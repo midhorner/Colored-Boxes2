@@ -1,5 +1,5 @@
 const BUTTON = document.querySelector("#reset");
-var numberOfSquares = 49;
+var numberOfSquares = 42;
 
 for (i = 0; i < numberOfSquares; i++) {
   document.querySelector("#template").innerHTML += "<div class='box'></div>";
@@ -32,14 +32,12 @@ function randomNumber() {
 
 function resetSquares() {
   for (var i = 0; i < boxes.length; i++) {
-    boxes[i].style.backgroundColor = "chartreuse"
+    boxes[i].style.backgroundColor = "chartreuse";
     boxes[i].style.borderRadius = "";
     boxes[i].style.boxShadow = "";
   }
 }
 
-for (var i = 0; i < boxes.length; i++) {
-  boxes[i].addEventListener("mouseover", randomize);
-}
+BOXES.forEach(box => box.addEventListener("mouseover", randomize));
 
 BUTTON.addEventListener("click", resetSquares, false);

@@ -6,7 +6,7 @@ for (i = 0; i < numberOfSquares; i++) {
 }
 
 const BOXES = document.querySelectorAll(".box");
-var boxes = Array.from(BOXES);
+var boxes = [...BOXES];
 
 function randomize() {
   var box = boxes.indexOf(this);
